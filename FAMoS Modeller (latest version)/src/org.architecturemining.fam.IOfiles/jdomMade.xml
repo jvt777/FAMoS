@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FAM>
+  <FAMnode type="module">
+    <name>University Counsil</name>
+    <id>m1</id>
+    <origin>250,50</origin>
+    <height>100</height>
+    <width>620</width>
+    <FAMnode type="feature">
+      <name>University Counsil 1</name>
+      <id>f1</id>
+      <origin>270,71</origin>
+      <height>60</height>
+      <width>180</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>University Counsil 2</name>
+      <id>f2</id>
+      <origin>470,71</origin>
+      <height>60</height>
+      <width>180</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>University Counsil 3</name>
+      <id>f3</id>
+      <origin>670,71</origin>
+      <height>60</height>
+      <width>180</width>
+    </FAMnode>
+  </FAMnode>
+  <FAMnode type="module">
+    <name>Student</name>
+    <id>m2</id>
+    <origin>50,200</origin>
+    <height>282</height>
+    <width>150</width>
+    <FAMnode type="feature">
+      <name>Student 1</name>
+      <id>f4</id>
+      <origin>70,221</origin>
+      <height>60</height>
+      <width>110</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>Student 2</name>
+      <id>f5</id>
+      <origin>70,311</origin>
+      <height>60</height>
+      <width>110</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>Student 3</name>
+      <id>f6</id>
+      <origin>70,401</origin>
+      <height>60</height>
+      <width>110</width>
+    </FAMnode>
+  </FAMnode>
+  <FAMnode type="module">
+    <name>eVoter</name>
+    <id>m3</id>
+    <origin>250,200</origin>
+    <height>282</height>
+    <width>620</width>
+    <FAMnode type="feature">
+      <name>Referendum Management</name>
+      <id>f7</id>
+      <origin>336,221</origin>
+      <height>60</height>
+      <width>180</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>Result Management</name>
+      <id>f8</id>
+      <origin>603,221</origin>
+      <height>60</height>
+      <width>180</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>Vote Management</name>
+      <id>f9</id>
+      <origin>470,341</origin>
+      <height>120</height>
+      <width>180</width>
+    </FAMnode>
+  </FAMnode>
+  <FAMnode type="module">
+    <name>Student Management</name>
+    <id>m4</id>
+    <origin>250,532</origin>
+    <height>100</height>
+    <width>460</width>
+    <FAMnode type="feature">
+      <name>Student Management 1</name>
+      <id>f10</id>
+      <origin>270,553</origin>
+      <height>60</height>
+      <width>200</width>
+    </FAMnode>
+    <FAMnode type="feature">
+      <name>Student Management 2</name>
+      <id>f11</id>
+      <origin>490,553</origin>
+      <height>60</height>
+      <width>200</width>
+    </FAMnode>
+  </FAMnode>
+  <line type="infoFlow" source="University Counsil 1" target="Referendum Management">
+    <name>Referendum setup</name>
+  </line>
+  <line type="infoFlow" source="University Counsil 2" target="Result Management">
+    <name>Request result</name>
+  </line>
+  <line type="infoFlow" source="Result Management" target="University Counsil 3">
+    <name>Result</name>
+  </line>
+  <line type="infoFlow" source="Referendum Management" target="Vote Management">
+    <name>Referendum details</name>
+  </line>
+  <line type="infoFlow" source="Vote Management" target="Result Management">
+    <name>Anonymized vote</name>
+  </line>
+  <line type="infoFlow" source="Student 1" target="Vote Management">
+    <name>Student info</name>
+  </line>
+  <line type="infoFlow" source="Vote Management" target="Student 2">
+    <name>Authorization</name>
+  </line>
+  <line type="infoFlow" source="Student 3" target="Vote Management">
+    <name>Vote</name>
+  </line>
+  <line type="infoFlow" source="Student Management 1" target="Vote Management">
+    <name>Authorization</name>
+  </line>
+  <line type="infoFlow" source="Vote Management" target="Student Management 2">
+    <name>Student information</name>
+  </line>
+</FAM>

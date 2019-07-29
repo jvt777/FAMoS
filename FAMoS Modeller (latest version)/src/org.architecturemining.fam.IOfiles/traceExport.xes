@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xes.version="2.0" xes.features="">
+  <global scope="trace">
+    <string key="name" value="" />
+    <string key="description" value="" />
+  </global>
+  <global scope="event">
+    <string key="order" value="" />
+    <string key="id" value="" />
+    <string key="name" value="" />
+  </global>
+  <trace id="t0">
+    <string key="name" value="Name179" />
+    <string key="description" value="Description179" />
+    <event>
+      <string key="order" value="0" />
+      <string key="id" value="f1" />
+      <string key="name" value="University Counsil 1" />
+    </event>
+    <event>
+      <string key="order" value="1" />
+      <string key="id" value="f7" />
+      <string key="name" value="Referendum Management" />
+    </event>
+    <event>
+      <string key="order" value="2" />
+      <string key="id" value="f9" />
+      <string key="name" value="Vote Management" />
+    </event>
+  </trace>
+  <trace id="t1">
+    <string key="name" value="Name49569" />
+    <string key="description" value="Description49569" />
+    <event>
+      <string key="order" value="0" />
+      <string key="id" value="f4" />
+      <string key="name" value="Student 1" />
+    </event>
+    <event>
+      <string key="order" value="1" />
+      <string key="id" value="f9" />
+      <string key="name" value="Vote Management" />
+    </event>
+    <event>
+      <string key="order" value="2" />
+      <string key="id" value="f5" />
+      <string key="name" value="Student 2" />
+    </event>
+    <event>
+      <string key="order" value="3" />
+      <string key="id" value="f6" />
+      <string key="name" value="Student 3" />
+    </event>
+    <event>
+      <string key="order" value="4" />
+      <string key="id" value="f9" />
+      <string key="name" value="Vote Management" />
+    </event>
+  </trace>
+</log>

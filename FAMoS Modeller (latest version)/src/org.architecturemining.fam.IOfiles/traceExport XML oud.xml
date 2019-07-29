@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TraceList>
+  <trace id="t0">
+    <name>Stemming</name>
+    <description>Student informatie wordt Opgevraagd via student management. De student krijgt daarna toestemming en kan gaan stemmen waarna de stem geanonimizeerd wordt.</description>
+    <feature order="0" id="f4" name="Student 1" />
+    <feature order="1" id="f9" name="Vote Management" />
+    <feature order="2" id="f11" name="Student Management 2" />
+    <feature order="3" id="f10" name="Student Management 1" />
+    <feature order="4" id="f9" name="Vote Management" />
+    <feature order="5" id="f5" name="Student 2" />
+    <feature order="6" id="f6" name="Student 3" />
+    <feature order="7" id="f9" name="Vote Management" />
+    <feature order="8" id="f8" name="Result Management" />
+  </trace>
+  <trace id="t1">
+    <name>Referendum opzet</name>
+    <description>Referendum wordt opgezet en met details naar het stemmanagementsysteem gestuurd.</description>
+    <feature order="0" id="f1" name="University Counsil 1" />
+    <feature order="1" id="f7" name="Referendum Management" />
+    <feature order="2" id="f9" name="Vote Management" />
+  </trace>
+  <trace id="t2">
+    <name>Opvragen resultaten</name>
+    <description>De resultaten worden opgevraagd bij de eVoter.</description>
+    <feature order="0" id="f2" name="University Counsil 2" />
+    <feature order="1" id="f8" name="Result Management" />
+    <feature order="2" id="f3" name="University Counsil 3" />
+  </trace>
+  <trace id="empty id">
+    <name>empty name</name>
+    <description>empty description</description>
+  </trace>
+</TraceList>
